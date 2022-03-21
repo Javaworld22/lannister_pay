@@ -47,7 +47,7 @@ app.post('/fees', (req,res) => {
     let feed_value = []
     let transactions = 'admin'
     const {FeeConfigurationSpec} = req.body
-    var feeds = FeeConfigurationSpec.split('\\n')
+    var feeds = FeeConfigurationSpec.split('\n')
     console.log(feeds);
 
 
@@ -78,8 +78,7 @@ app.post('/fees', (req,res) => {
     req.session.feed_value = feed_value
 
 
-    res.json({'success': FeeConfigurationSpec,'feed_id': feed_id,'feed_currency':feed_currency,'feed_locale':feed_locale,
-              'feed_entity':feed_entity,'feed_property':feed_property,'fee_type':fee_type,'feed_value':feed_value})
+    res.json({'Status': 'Ok'})
 })
 .catch(error => console.error('Database error occured '+error))
 })
