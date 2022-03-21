@@ -85,7 +85,7 @@ app.post('/fees', (req,res) => {
 
 
 app.post('/compute-transaction-fee', (req,res) => {
-    const {ID,Amount,Currency,CurrencyCountry,Customer,PaymentEntity} = req.body
+    let {ID,Amount,Currency,CurrencyCountry,Customer,PaymentEntity} = req.body
     //  console.log(ID)
     //  console.log(Amount)
     //  console.log(Currency)
@@ -203,6 +203,7 @@ return
     })
     .catch(error => console.error('Cannot retrieve from Database '+error))
 }
+
 
 })
 
