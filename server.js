@@ -8,7 +8,7 @@ const MongoClient = require('mongodb').MongoClient;
 var app = express()
 const port = process.env.PORT || 3005
 
-const connectionString = 'mongodb+srv://Javaworld:javaworld4real@cluster0.ohjvp.mongodb.net/cluster0?authSource=admin&replicaSet=atlas-k0ow6z-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'
+const connectionString = 'mongodb+srv://Javaworld:***************@cluster0.ohjvp.mongodb.net/cluster0?authSource=admin&replicaSet=atlas-k0ow6z-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'
 
 
 // app.use(redirectSSL.create({
